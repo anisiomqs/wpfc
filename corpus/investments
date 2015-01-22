@@ -1,0 +1,28 @@
+depositei/act na/prp poupança/obj r$/$ 1000/nc
+pagamento/act título/n capitalização/n mensal/n no/prp valor/n de/prp r$/$ 75/nc
+transferido/act para/prp poupança/obj r$/$ 1000/nc
+transferencia/act poupança/obj caixa/bco 1000/nc reais/$
+poupança/obj caixa/bco r$/$ 900/nc
+transferi/act para/prp poupança/obj r$/$ 200/nc
+descontado/act valor/n de/prp capitalização/obj itaú/bco no/prp valor/n de/prp r$/$ 75/nc
+transfer/act de/prp valor/n para/prp poupança/obj
+desconto/act de/prp valor/n referente/adj poupança/obj itaú/bco
+desconto/act de/prp valor/n da/prp previdência/obj 150/nc reais/$
+desconto/act de/prp pic/obj itaú/bco no/prp valor/n de/prp r$/$ 150/nc
+débito/act pic/obj itaú/bco r$/$ 1/nc
+transferi/act para/prp caixa/bco econômica/bco poupança/obj de/prp r$/$ 1/nc
+previdência/n privada/n
+débito/act previdencia/n
+desconto/act previdência/n
+desconto/act previdencia/n
+transferência/act
+transferido/act
+poupança/obj
+reserva/obj
+investimento/n
+depósito/act
+poupanca/act
+poupança/obj
+pic/obj
+previdência/obj
+previdencia/obj

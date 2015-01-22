@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<table>
+  <tr>
+    <th>O que</th>
+    <th>Quanto</th>
+    <th>Onde</th>
+    <th>Quando</th>
+    <th>Envolvidos</th>
+    <th>Referência</th>
+    <th>Classe</th>
+  </tr>
+  {% for tweet in tweets: %}
+    <tr>
+      <td>{{ tweet.what }}</td>
+      <td>{{ tweet.how_much }}</td>
+      <td>{{ tweet.where }}</td>
+      <td>{{ tweet.when }}</td>
+      <td>{{ tweet.involveds }}</td>
+      <td>{{ tweet.reference }}</td>
+      <td>{{ tweet.classification }}</td>
+    </tr>
+  {% endfor %}
+</table>
+{% endblock %}
