@@ -1,2 +1,4 @@
 flask/
 __pycache__/
+app.db
+db_repository/
