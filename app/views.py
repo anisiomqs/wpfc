@@ -4,12 +4,19 @@ from flask import redirect
 from app.tagger import tagger,chunker
 from .models import Entry
 from datetime import datetime
+from sqlalchemy import func
 import re
+import flask
 
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html',tweets=process_tweets())
+
+@app.route('/chart')
+def chart():
+    totals = db.session.query(Entry.classification, func.sum(Entry.how_much)).group_by(Entry.classification)
+    return flask.jsonify(totals)
 
 def process_tweets():
     tweets = api.user_timeline()

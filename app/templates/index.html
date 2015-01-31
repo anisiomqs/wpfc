@@ -1,25 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
-<table>
-  <tr>
-    <th>O que</th>
-    <th>Quanto</th>
-    <th>Onde</th>
-    <th>Quando</th>
-    <th>Envolvidos</th>
-    <th>Referência</th>
-    <th>Classe</th>
-  </tr>
-  {% for tweet in tweets: %}
-    <tr>
-      <td>{{ tweet.what }}</td>
-      <td>{{ tweet.how_much }}</td>
-      <td>{{ tweet.where }}</td>
-      <td>{{ tweet.when }}</td>
-      <td>{{ tweet.involveds }}</td>
-      <td>{{ tweet.reference }}</td>
-      <td>{{ tweet.classification }}</td>
-    </tr>
-  {% endfor %}
-</table>
+<div class="row">
+  <div class="small-12 large-8 columns">
+    <table>
+      <tr>
+        <th>O que</th>
+        <th>Quanto</th>
+        <th>Onde</th>
+        <th>Quando</th>
+        <th>Envolvidos</th>
+        <th>Referência</th>
+        <th>Classe</th>
+      </tr>
+      {% for tweet in tweets: %}
+      <tr>
+        <td>{{ tweet.what }}</td>
+        <td>{{ tweet.how_much }}</td>
+        <td>{{ tweet.where }}</td>
+        <td>{{ tweet.when }}</td>
+        <td>{{ tweet.involveds }}</td>
+        <td>{{ tweet.reference }}</td>
+        <td>{{ tweet.classification }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <div class="small-6 large-4 columns">
+    <canvas id="myChart" style="width: 100%;height:100%"></canvas>
+  </div>
+</div>
 {% endblock %}
