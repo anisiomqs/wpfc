@@ -33,8 +33,8 @@ transferência/act para/prp conta/n da/prp caixa/bco r$/$ 1500/nc referente/adj 
 whey/obj na/prp sport/loc center/loc por/prp r$/$ 170/nc
 compra/act de/prp suplemento/obj na/prp nutricenter/loc e/prp custou/act r$/$ 150/nc
 desconto/act de/prp seguro/obj carro/n parcela/n 1/nc r$/$ 350/nc
-recebimento/actp de/prp salário/obj da/prp systêxtil/loc deu/n r$/$ 1/nc
-recebi/actp o/art salário/obj de/prp dezembro/mon woohoo/n r$/$ 1/nc
+recebimento/act de/prp salário/obj da/prp systêxtil/loc deu/n r$/$ 1/nc
+recebi/act o/art salário/obj de/prp dezembro/mon woohoo/n r$/$ 1/nc
 comprei/act gta/n v/n na/prp game/loc mania/loc e/prp custou/act r$/$ 219/nc
 desconto/act de/prp previdência/obj referente/adj a/prp dezembro/mon r$/$ 150/nc
 pagamento/act de/prp cartão/obj de/prp crédito/n de/prp novembro/mon r$/$ 1/nc
@@ -182,11 +182,11 @@ consulta/n
 dentista/n
 debitado/act
 debito/act
-credito/actp
-creditado/actp
-recebido/actp
-recebimento/actp
-recebi/actp
+credito/act
+creditado/act
+recebido/act
+recebimento/act
+recebi/act
 pago/act
 paguei/act
 descontei/act

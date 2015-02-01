@@ -28,26 +28,7 @@ var options = {
 
 }
 
-var data = [
-    {
-        value: 300,
-        color:"#F7464A",
-        highlight: "#FF5A5E",
-        label: "Red"
-    },
-    {
-        value: 50,
-        color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Green"
-    },
-    {
-        value: 100,
-        color: "#FDB45C",
-        highlight: "#FFC870",
-        label: "Yellow"
-    }
-]
+var data = []
 
 var labels = {
     "IV": { label: "Investimentos", color: "#46BFBD", highlight: "#5AD3D1"},
@@ -79,14 +60,12 @@ function loaded(){
 function buildObjectArray(json){
     var obj = JSON.parse(json);
     return Object.keys(obj).filter(function(key){return key != "IN"}).map(function(key){
-        if(key != "IN") {
-            return {
-                id: key,
-                value: obj[key],
-                label: labels[key]["label"],
-                color: labels[key]["color"],
-                highlight: labels[key]["highlight"]
-            }
+        return {
+            id: key,
+            value: obj[key],
+            label: labels[key]["label"],
+            color: labels[key]["color"],
+            highlight: labels[key]["highlight"]
         }
     });
 }
